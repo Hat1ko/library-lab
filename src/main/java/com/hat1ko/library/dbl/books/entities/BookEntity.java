@@ -12,7 +12,8 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "book")
+@Entity
+@Table(name = "book")
 public class BookEntity {
     @Id
     @GeneratedValue(generator = "uuid", strategy = GenerationType.AUTO)

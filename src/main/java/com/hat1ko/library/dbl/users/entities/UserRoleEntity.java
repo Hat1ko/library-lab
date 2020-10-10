@@ -9,7 +9,8 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "userRole")
+@Entity
+@Table(name = "userRole")
 public class UserRoleEntity {
     @Id
     @GeneratedValue(generator = "uuid", strategy = GenerationType.AUTO)

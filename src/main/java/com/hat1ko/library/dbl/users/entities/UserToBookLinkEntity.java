@@ -9,7 +9,8 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="userToBookLink")
+@Entity
+@Table(name = "userToBookLink")
 public class UserToBookLinkEntity {
     @Id
     @GeneratedValue(generator = "uuid", strategy = GenerationType.AUTO)
